@@ -75,7 +75,7 @@ h1[data-testid="my-goal-statement"] {
   text-align: center;
 }
 
-.year:first-child{
+.year:first-child {
   border-bottom: #373a40 1px solid;
 }
 
@@ -108,12 +108,11 @@ h1[data-testid="my-goal-statement"] {
   padding: 0.75rem 1rem;
   background-color: #cbcbcb;
   color: #373a40;
-  border-bottom: #373a40 1px solid;
+  border-bottom: #888d96 1px solid;
 }
 
-.list-item:last-child{
+.list-item:last-child {
   border-bottom: none;
-
 }
 
 .year-title {
@@ -130,7 +129,7 @@ h1[data-testid="my-goal-statement"] {
   align-items: center;
   width: 100%;
   padding: 2rem 0;
-  background-color: #686D76;
+  background-color: #686d76;
 }
 
 @media screen and (min-width: 768px) {
@@ -144,6 +143,6 @@ h1[data-testid="my-goal-statement"] {
     padding: 3rem 20%;
   }
   .year-container {
-    padding:0 20%;
+    padding: 0 20%;
   }
 }
