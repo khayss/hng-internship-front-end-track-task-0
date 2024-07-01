@@ -15,94 +15,190 @@
 
 <body>
     <div class="main-container">
-
-        <div data-testid="" class="banner-container">
-            <h1 data-testid="" class="heading">
-                <span data-testid="welcome-message">Welcome!</span><br><span data-testid="my-intro">My name is
-                </span><span data-testid="my-name">Kufre
-                    Samuel</span><span>.</span><br><span data-testid="my-niche">I'm a web developer.</span>
-            </h1>
-            <h1 data-testid="my-goal-statement">This is my goals for the next two (2) years in the tech field.</h1>
-        </div>
-        <div data-testid="years" class="year-container">
-            <div class="year" data-testid="year-one">
-                <div class="year-title" data-testid="year-one-title-container">
-                    <h2 data-testid="year-one-title">Year One</h2>
+        <div class="banner-container">
+            <div class="heading-container">
+                <div>
+                    <img src="PXL_20240214_160542181.MP2.jpg" alt="my-photo" testid="slackProfilePicture">
                 </div>
-                <div class="year-breakdown" data-testid="year-one-breakdown">
-                    <div class="quarter-container" data-testid="yo-first-quarter">
-                        <h3 data-testid="yo-fq-title">First Quarter</h3>
-                        <ul class="list" data-testid="yo-fq-list">
-                            <li data-testid="yo-fq-list-item1" class="list-item">Secure an internship as a Backend or
+                <h1 class="heading">
+                    <span>Welcome!</span><br><span>My name is </span><span class="my-name"
+                        data-testid="slackDisplayName">Kufre
+                        Samuel</span><span>.</span><br><span class="niche">I'm a web developer.</span>
+                </h1>
+                <p><span class="email" data-testid="slackEmail">forendals@gmail.com</span></p>
+                <h1 class="goal-statement">This is my goals for the next two (2) years in the tech field.</h1>
+            </div>
+            <div class="time-container">
+                <div class="clock-svg"><svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M437.019,74.981C388.668,26.629,324.38,0,256,0S123.332,26.629,74.981,74.981C26.629,123.332,0,187.62,0,256
+                               s26.629,132.668,74.981,181.019C123.332,485.371,187.62,512,256,512c64.518,0,126.15-24.077,173.541-67.796l-10.312-11.178
+                               c-44.574,41.12-102.544,63.766-163.229,63.766c-64.317,0-124.786-25.046-170.266-70.527
+                               C40.254,380.786,15.208,320.317,15.208,256S40.254,131.214,85.734,85.735C131.214,40.254,191.683,15.208,256,15.208
+                               s124.786,25.046,170.266,70.527c45.48,45.479,70.526,105.948,70.526,170.265c0,60.594-22.587,118.498-63.599,163.045
+                               l11.188,10.301C487.986,381.983,512,320.421,512,256C512,187.62,485.371,123.332,437.019,74.981z" />
+                                    <path
+                                        d="M282.819,263.604h63.415v-15.208h-63.415c-1.619-5.701-5.007-10.662-9.536-14.25l35.913-86.701l-14.049-5.82
+                               l-35.908,86.688c-1.064-0.124-2.142-0.194-3.238-0.194c-15.374,0-27.881,12.508-27.881,27.881s12.507,27.881,27.881,27.881
+                               C268.737,283.881,279.499,275.292,282.819,263.604z M243.327,256c0-6.989,5.685-12.673,12.673-12.673
+                               c6.989,0,12.673,5.685,12.673,12.673c0,6.989-5.685,12.673-12.673,12.673C249.011,268.673,243.327,262.989,243.327,256z" />
+                                    <path d="M451.168,256c0-107.616-87.552-195.168-195.168-195.168S60.832,148.384,60.832,256S148.384,451.168,256,451.168
+                               S451.168,363.616,451.168,256z M76.04,256c0-99.231,80.73-179.96,179.96-179.96S435.96,156.769,435.96,256
+                               S355.231,435.96,256,435.96S76.04,355.231,76.04,256z" />
+                                    <rect x="248.396" y="366.511" width="15.208" height="56.776" />
+                                    <path d="M61.672,336.501l-14.05,5.82c23.059,55.668,66.416,99.026,122.085,122.085l5.82-14.049
+                               C123.61,428.851,83.176,388.416,61.672,336.501z" />
+                                    <path d="M450.397,175.485l14.049-5.82c-23.059-55.669-66.417-99.027-122.085-122.084l-5.82,14.049
+                               C388.457,83.135,428.891,123.569,450.397,175.485z" />
+                                    <path d="M256,45.624V30.416c-60.256,0-116.904,23.465-159.512,66.071C53.881,139.095,30.416,195.744,30.416,256h15.208
+                               c0-56.194,21.883-109.024,61.617-148.759C146.976,67.507,199.807,45.624,256,45.624z" />
+                                    <path d="M481.584,256h-15.208c0,56.193-21.883,109.024-61.617,148.759c-39.734,39.735-92.566,61.617-148.759,61.617v15.208
+                               c60.256,0,116.904-23.465,159.513-66.071C458.119,372.904,481.584,316.256,481.584,256z" />
+                                    <rect x="248.396" y="88.713" width="15.208" height="56.776" />
+
+                                    <rect x="183.845" y="106.019"
+                                        transform="matrix(0.3827 0.9239 -0.9239 0.3827 226.5988 -111.8865)"
+                                        width="26.361" height="15.208" />
+
+                                    <rect x="301.78" y="390.75"
+                                        transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 67.4626 841.7849)"
+                                        width="26.361" height="15.207" />
+
+                                    <rect x="100.445" y="189.43"
+                                        transform="matrix(0.9239 0.3827 -0.3827 0.9239 84.0528 -28.4842)" width="26.36"
+                                        height="15.207" />
+
+                                    <rect x="385.201" y="307.351"
+                                        transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 645.9084 758.3894)"
+                                        width="26.361" height="15.207" />
+
+                                    <rect x="106.028" y="301.792"
+                                        transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 -133.8779 540.4901)"
+                                        width="15.207" height="26.36" />
+
+                                    <rect x="390.765" y="183.851"
+                                        transform="matrix(0.3827 0.9239 -0.9239 0.3827 427.9489 -246.4146)"
+                                        width="15.207" height="26.361" />
+
+                                    <rect x="189.433" y="385.188"
+                                        transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 226.6226 841.8156)"
+                                        width="15.208" height="26.361" />
+
+                                    <rect x="307.381" y="100.448"
+                                        transform="matrix(0.9239 0.3827 -0.3827 0.9239 67.4614 -111.8911)"
+                                        width="15.207" height="26.361" />
+
+                                    <rect x="129.389" y="150.181"
+                                        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 157.7713 380.9216)"
+                                        width="56.776" height="15.208" />
+
+                                    <rect x="325.825" y="346.62"
+                                        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 354.2049 855.1643)"
+                                        width="56.776" height="15.208" />
+                                    <rect x="88.713" y="248.396" width="56.776" height="15.208" />
+                                    <rect x="366.511" y="248.396" width="56.776" height="15.208" />
+
+                                    <rect x="150.157" y="325.829"
+                                        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 18.8444 716.2403)"
+                                        width="15.208" height="56.776" />
+
+                                    <rect x="346.602" y="129.395"
+                                        transform="matrix(0.7071 0.7071 -0.7071 0.7071 215.3148 -204.2485)"
+                                        width="15.208" height="56.776" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg></div>
+                <div>
+
+                    <h2 id="current-day" data-testid="currentDay"></h2>
+                    <h3 id="current-time" data-testid="currentTimeUTC"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="year-container">
+            <div class="year">
+                <div class="year-title">
+                    <h2>Year One</h2>
+                </div>
+                <div class="year-breakdown">
+                    <div class="quarter-container">
+                        <h3>First Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Secure an internship as a Backend or
                                 Frontend Developer</li>
-                            <li data-testid="yo-fq-list-item2" class="list-item">Build on the internship experience</li>
-                            <li data-testid="yo-fq-list-item3" class="list-item">Look out for opportunities</li>
-                            <li data-testid="yo-fq-list-item4" class="list-item">Keep learning</li>
+                            <li class="list-item">Build on the internship experience</li>
+                            <li class="list-item">Look out for opportunities</li>
+                            <li class="list-item">Keep learning</li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yo-second-quarter">
-                        <h3 data-testid="yo-sq-title">Second Quarter</h3>
-                        <ul class="list" data-testid="yo-sq-list">
-                            <li data-testid="yo-sq-list-item1" class="list-item">Get a job or participate in
+                    <div class="quarter-container">
+                        <h3>Second Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Get a job or participate in
                                 hackathons/open source</li>
-                            <li data-testid="yo-sq-list-item2" class="list-item">Share knowledge</li>
-                            <li data-testid="yo-sq-list-item3" class="list-item">Go advance on current languages and
+                            <li class="list-item">Share knowledge</li>
+                            <li class="list-item">Go advance on current languages and
                                 skills</li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yo-third-quarter">
-                        <h3 data-testid="yo-tq-title">Third Quarter</h3>
-                        <ul class="list" data-testid="yo-tq-list">
+                    <div class="quarter-container">
+                        <h3>Third Quarter</h3>
+                        <ul class="list">
 
-                            <li data-testid="yo-tq-list-item1" class="list-item">Learn a new language</li>
-                            <li data-testid="yo-tq-list-item2" class="list-item">Build a project</li>
+                            <li class="list-item">Learn a new language</li>
+                            <li class="list-item">Build a project</li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yo-fourth-quarter">
-                        <h3 data-testid="yo-foq-title">Fourth Quarter</h3>
-                        <ul class="list" data-testid="yo-foq-list">
-                            <li data-testid="yo-foq-list-item1" class="list-item">Expand and update knowledge on current
+                    <div class="quarter-container">
+                        <h3>Fourth Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Expand and update knowledge on current
                                 languages and
                                 frameworks</li>
-                            <li data-testid="yo-foq-list-item2" class="list-item">Build a project</li>
+                            <li class="list-item">Build a project</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="year" data-testid="year-two">
-                <div class="year-title" data-testid="year-two-title-container">
-                    <h2 data-testid="year-two-title">Year Two</h2>
+            <div class="year">
+                <div class="year-title">
+                    <h2>Year Two</h2>
                 </div>
-                <div class="year-breakdown" data-testid="year-two-breakdown">
+                <div class="year-breakdown">
 
-                    <div class="quarter-container" data-testid="yt-first-quarter">
-                        <h3 data-testid="yt-fq-title">First Quarter</h3>
-                        <ul class="list" data-testid="yt-fq-list">
-                            <li data-testid="yt-fq-list-item1" class="list-item">Build on job experience</li>
-                            <li data-testid="yt-fq-list-item2" class="list-item">Level up and upskill</li>
+                    <div class="quarter-container">
+                        <h3>First Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Build on job experience</li>
+                            <li class="list-item">Level up and upskill</li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yt-second-quarter">
-                        <h3 data-testid="yt-sq-title">Second Quarter</h3>
-                        <ul class="list" data-testid="yt-sq-list">
-                            <li data-testid="yt-sq-list-item1" class="list-item">Give back and support new techies</li>
-                            <li data-testid="yt-sq-list-item2" class="list-item">Build a side project</li>
+                    <div class="quarter-container">
+                        <h3>Second Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Give back and support new techies</li>
+                            <li class="list-item">Build a side project</li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yt-third-quarter">
-                        <h3 data-testid="yt-tq-title">Third Quarter</h3>
-                        <ul class="list" data-testid="yt-tq-list">
-                            <li data-testid="yt-tq-list-item1" class="list-item">Give back and support new techies</li>
-                            <li data-testid="yt-tq-list-item2" class="list-item">Build something useful and impactful
+                    <div class="quarter-container">
+                        <h3>Third Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Give back and support new techies</li>
+                            <li class="list-item">Build something useful and impactful
                             </li>
                         </ul>
                     </div>
-                    <div class="quarter-container" data-testid="yt-fourth-quarter">
-                        <h3 data-testid="yt-foq-title">Fourth Quarter</h3>
-                        <ul class="list" data-testid="yt-foq-list">
-                            <li data-testid="yt-foq-list-item1" class="list-item">Mentor 1-3 junior techies</li>
-                            <li data-testid="yt-foq-list-item2" class="list-item">Level up and upscale</li>
-                            <li data-testid="yt-foq-list-item3" class="list-item">Build a big project from scratch or
+                    <div class="quarter-container">
+                        <h3>Fourth Quarter</h3>
+                        <ul class="list">
+                            <li class="list-item">Mentor 1-3 junior techies</li>
+                            <li class="list-item">Level up and upscale</li>
+                            <li class="list-item">Build a big project from scratch or
                                 join a big team</li>
                         </ul>
                     </div>
@@ -110,11 +206,36 @@
                 </div>
             </div>
         </div>
-        <footer class="footer-container" data-testid="footer">
-            <p data-testid="footer-project-by">This is a project by Kufre Samuel</p>
-            <p data-testid="footer-copy-right">&copy; 2022 Kufre Samuel. All rights reserved.</p>
+        <div class="backlinks-container">
+            <p><a href="http://hng.tech/learn" target="_blank" class="backlinks" data-testid="hngLink">Click here to
+                    learn in-demand
+                    tech skills at HNG</a></p>
+            <p><a href="http://keyword.dog/" target="_blank" class="backlinks" data-testid="keywordLink">Click here to
+                    generate keywords
+                    with AI</a></p>
+            <p><a href="http://scrapeanyweb.site/" target="_blank" class="backlinks"
+                    data-testid="scrapeanywebLink">Click here to scrap
+                    any website in seconds</a></p>
+        </div>
+        <footer class="footer-container">
+            <p>This is a project by Kufre Samuel</p>
+            <p>&copy; 2024 Kufre Samuel. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        function normalizeTime(time) {
+            return time < 10 ? "0" + time : time;
+        }
+        setInterval(() => {
+            const currentTime = new Date();
+            let hour = currentTime.getUTCHours();
+            let minute = currentTime.getUTCMinutes();
+            let second = currentTime.getUTCSeconds();
+            document.getElementById("current-time").textContent = normalizeTime(hour) + " : " + normalizeTime(minute) + " : " + normalizeTime(second) + " UTC";
+            document.getElementById("current-day").textContent = "It's " + days[currentTime.getUTCDay()];
+        }, 1000)
+    </script>
 </body>
 
 </html>

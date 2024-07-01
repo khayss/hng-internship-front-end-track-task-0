@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* list-style: none; */
 }
 
 body {
@@ -34,6 +33,7 @@ body {
   align-items: center;
   background-color: #eeeeee;
   width: 100%;
+  padding-bottom: 3rem;
 }
 
 .heading {
@@ -42,17 +42,23 @@ body {
   color: #eeeeee;
 }
 
-span[data-testid="my-name"] {
+.my-name {
   color: #dc5f00;
 }
 
-span[data-testid="my-niche"] {
+.niche {
   font-size: 1.25rem;
   font-weight: 500;
   color: #bababa;
 }
 
-h1[data-testid="my-goal-statement"] {
+.email {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #dc5f00;
+}
+
+.goal-statement {
   font-size: 1.5rem;
   font-weight: 500;
   color: #dcdcdc;
@@ -131,10 +137,79 @@ h1[data-testid="my-goal-statement"] {
   padding: 2rem 0;
   background-color: #686d76;
 }
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: start;
+}
+
+.clock-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.clock-svg > svg {
+  fill: #888d96;
+}
+
+#current-day {
+  color: #dc5f00;
+}
+
+#current-time {
+  color: #cbcbcb;
+}
+
+.backlinks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1.5rem;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.backlinks {
+  width: 100%;
+  text-decoration: none;
+  color: #dc5f00;
+  border-bottom: #373a40 1px solid;
+}
 
 @media screen and (min-width: 768px) {
   .year-breakdown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .clock-svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .banner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .heading-container {
+    width: 70%;
+  }
+
+  .time-container {
+    width: 30%;
+    align-items: end;
+    align-self: flex-end;
+    flex-direction: column;
   }
 }
 
@@ -144,5 +219,10 @@ h1[data-testid="my-goal-statement"] {
   }
   .year-container {
     padding: 0 20%;
+    padding-bottom: 3rem;
+  }
+
+  .backlinks-container {
+    padding: 3rem 20%;
   }
 }
