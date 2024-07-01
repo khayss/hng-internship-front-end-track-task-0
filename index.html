@@ -233,7 +233,7 @@
             let minute = currentTime.getUTCMinutes();
             let second = currentTime.getUTCSeconds();
             document.getElementById("current-time").textContent = normalizeTime(hour) + " : " + normalizeTime(minute) + " : " + normalizeTime(second) + " UTC";
-            document.getElementById("current-day").textContent = "It's " + days[currentTime.getUTCDay()];
+            document.getElementById("current-day").textContent = days[currentTime.getUTCDay()];
         }, 1000)
     </script>
 </body>
